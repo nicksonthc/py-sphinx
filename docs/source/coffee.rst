@@ -1,13 +1,13 @@
-usage package
-=============
+coffee package
+==============
 
 Submodules
 ----------
 
-usage.fool module
------------------
+coffee.coffee module
+--------------------
 
-.. automodule:: usage.fool
+.. automodule:: coffee.coffee
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ usage.fool module
 Module contents
 ---------------
 
-.. automodule:: usage
+.. automodule:: coffee
    :members:
    :undoc-members:
    :show-inheritance:

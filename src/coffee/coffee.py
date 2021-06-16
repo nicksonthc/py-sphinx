@@ -1,5 +1,5 @@
 """
-.. module:: fool
+.. module:: coffee1
    :platform: Unix, Windows
    :synopsis: A useful module indeed.
 
@@ -59,49 +59,49 @@ def _private_fn_with_docstring(foo, bar='baz', foobarbas=None):
     return None
 
 
-class MyPublicClass(object):
+class Brewing(object):
     """We use this as a public class example class.
 
-    You never call this class before calling :func:`public_fn_with_sphinxy_docstring`.
+    You never call this class before calling :func:`coffee.purchase module.`.
 
     .. note::
 
-       An example of intersphinx is this: you **cannot** use :mod:`pickle` on this class.
+       You need ready your damn beans for this class.
 
     """
 
-    def __init__(self, foo, bar='baz'):
+    def __init__(self, barista:object, making:str='drip')->None:
         """A really simple class.
 
         Args:
-           foo (str): We all know what foo does.
+           barista (object): inject object dependency
 
         Kwargs:
-           bar (str): Really, same as foo.
+           making (str): default brewing lor
 
         """
-        self._foo = foo
-        self._bar = bar
+        self._barista = barista
+        self._making = making
 
-    def get_foobar(self, foo, bar=True):
-        """This gets the foobar
+    def pour_water(self, capacity:float, container:str='glass')->bool:
+        """This gets the water to ready
 
         This really should have a full function definition, but I am too lazy.
 
-        >>> print get_foobar(10, 20)
-        30
-        >>> print get_foobar('a', 'b')
-        ab
+        >>> print pour_water(200)
+        200, 'glass'
+        >>> print pour_water(300, 'jar')
+        300, 'jar'
 
         Isn't that what you want?
 
         """
-        return foo + bar
+        return True
 
-    def _get_baz(self, baz=None):
-        """A private function to get baz.
+    def get_coffee(self, guest:bool):
+        """A private function to get coffee.
 
         This really should have a full function definition, but I am too lazy.
 
         """
-        return baz
+        return self
