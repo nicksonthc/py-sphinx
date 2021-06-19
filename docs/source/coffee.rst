@@ -12,6 +12,14 @@ coffee.coffee module
    :undoc-members:
    :show-inheritance:
 
+coffee.purchase module
+----------------------
+
+.. automodule:: coffee.purchase
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

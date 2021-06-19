@@ -1,5 +1,5 @@
 """
-.. module:: coffee1
+.. module:: coffee
    :platform: Unix, Windows
    :synopsis: A useful module indeed.
 
@@ -8,55 +8,53 @@
 
 """
 
-def public_fn_with_googley_docstring(name, state=None):
-    """This function does something.
+# def public_fn_with_googley_docstring(name, state=None):
+#     """This function does something.
 
-    Args:
-       name (str):  The name to use.
+#     Args:
+#        name (str):  The name to use.
 
-    Kwargs:
-       state (bool): Current state to be in.
+#     Kwargs:
+#        state (bool): Current state to be in.
 
-    Returns:
-       int.  The return code::
+#     Returns:
+#        int.  The return code::
 
-          0 -- Success!
-          1 -- No good.
-          2 -- Try again.
+#           0 -- Success!
+#           1 -- No good.
+#           2 -- Try again.
 
-    Raises:
-       AttributeError, KeyError
+#     Raises:
+#        AttributeError, KeyError
 
-    A really great idea.  A way you might use me is
+#     A really great idea.  A way you might use me is
 
-    >>> print public_fn_with_googley_docstring(name='foo', state=None)
-    0
+#     >>> print public_fn_with_googley_docstring(name='foo', state=None)
+#     0
 
-    BTW, this always returns 0.  **NEVER** use with :class:`MyPublicClass`.
+#     BTW, this always returns 0.  **NEVER** use with :class:`MyPublicClass`.
 
-    """
-    return 0
+#     """
+#     return 0
 
-def public_fn_with_sphinxy_docstring(name, state=None):
-    """This function does something.
+# def public_fn_with_sphinxy_docstring(name, state=None):
+#     """This function does something.
 
-    :param name: The name to use.
-    :type name: str.
-    :param state: Current state to be in.
-    :type state: bool.
-    :returns:  int -- the return code.
-    :raises: AttributeError, KeyError
+#     :param name: The name to use.
+#     :type name: str.
+#     :param state: Current state to be in.
+#     :type state: bool.
+#     :returns:  int -- the return code.
+#     :raises: AttributeError, KeyError
 
-    """
-    return 0
+#     """
+#     return 0
 
-def public_fn_without_docstring():
-    return True
 
-def _private_fn_with_docstring(foo, bar='baz', foobarbas=None):
-    """I have a docstring, but won't be imported if you just use ``:members:``.
-    """
-    return None
+# def _private_fn_with_docstring(foo, bar='baz', foobarbas=None):
+#     """I have a docstring, but won't be imported if you just use ``:members:``.
+#     """
+#     return None
 
 
 class Brewing(object):
@@ -105,3 +103,4 @@ class Brewing(object):
 
         """
         return self
+

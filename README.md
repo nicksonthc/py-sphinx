@@ -17,6 +17,9 @@
 ### build .srt
 2. sphinx-apidoc -o docs/source ~/py-sphinx/src
 
+### Scripts for 1. and 2.
+3. ./build.sh
+
 `Reference`
 1. https://www.sphinx-doc.org/en/master/index.html
 

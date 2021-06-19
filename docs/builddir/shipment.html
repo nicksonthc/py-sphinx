@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+<html lang="python">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>shipment package &#8212; py-sphinx-walkthrough 16/4/2021 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="coffee package" href="coffee.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="shipment-package">
+<h1>shipment package<a class="headerlink" href="#shipment-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-shipment.shipment">
+<span id="shipment-shipment-module"></span><h2>shipment.shipment module<a class="headerlink" href="#module-shipment.shipment" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="shipment.shipment.Shipment">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">shipment.shipment.</span></span><span class="sig-name descname"><span class="pre">Shipment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Truck'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shipment.shipment.Shipment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="shipment.shipment.Shipment.confirmShipment">
+<span class="sig-name descname"><span class="pre">confirmShipment</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#shipment.shipment.Shipment.confirmShipment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Trigger multiple ::member routine to ochestration services</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Won't imported ::member function to markup docs.</p>
+</div>
+<ol class="arabic simple">
+<li><p>self._requestQuote(self)</p></li>
+<li><p>self._agreeShippingIncoterms(self)</p></li>
+<li><p>self._issueCommercialInvoice(self)</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#shipment.shipment.Shipment" title="shipment.shipment.Shipment"><em>Shipment</em></a>) -- the constructor object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl>
+<dt>bool.  The return code::</dt><dd><p>0 -- False</p>
+<p>1 -- True</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="shipment.shipment.helper_one">
+<span class="sig-prename descclassname"><span class="pre">shipment.shipment.</span></span><span class="sig-name descname"><span class="pre">helper_one</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#shipment.shipment.helper_one" title="Permalink to this definition">¶</a></dt>
+<dd><p>Without doc string</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="shipment.shipment.helper_two">
+<span class="sig-prename descclassname"><span class="pre">shipment.shipment.</span></span><span class="sig-name descname"><span class="pre">helper_two</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'nickson'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shipment.shipment.helper_two" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function does something with input args.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) -- The name to use.</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Kwargs:</dt><dd><p>state (bool): Current state to be in.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><p>int.  The return code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>0 -- Success!
+1 -- No good.
+2 -- Try again.
+</pre></div>
+</div>
+</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>AttributeError</strong><strong>, </strong><strong>KeyError</strong> -- </p>
+</dd>
+</dl>
+<p>A really great idea.  A way you might use me is</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">helper_two</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;nickson&#39;</span><span class="p">)</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-shipment">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-shipment" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">py-sphinx-walkthrough</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="coffee.html">coffee package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">shipment package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-shipment.shipment">shipment.shipment module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-shipment">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="coffee.html" title="previous chapter">coffee package</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, nicksonthc.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/shipment.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

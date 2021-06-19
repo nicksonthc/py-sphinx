@@ -1,0 +1,1 @@
+sphinx-apidoc -o docs/source ~/py-sphinx/src && sphinx-build -b html ~/py-sphinx/docs/source docs/builddir

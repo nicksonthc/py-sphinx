@@ -15,6 +15,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="shipment package" href="shipment.html" />
     <link rel="prev" title="Welcome to py-sphinx-walkthrough&#39;s documentation!" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -39,7 +40,7 @@
 </section>
 <section id="module-coffee.coffee">
 <span id="coffee-coffee-module"></span><h2>coffee.coffee module<a class="headerlink" href="#module-coffee.coffee" title="Permalink to this headline">¶</a></h2>
-<span class="target" id="module-coffee1"></span><dl class="py class">
+<span class="target" id="module-coffee"></span><dl class="py class">
 <dt class="sig sig-object py" id="coffee.coffee.Brewing">
 <em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">coffee.coffee.</span></span><span class="sig-name descname"><span class="pre">Brewing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">barista</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">making</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'drip'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coffee.coffee.Brewing" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -72,69 +73,19 @@
 
 </dd></dl>
 
+</section>
+<section id="module-coffee.purchase">
+<span id="coffee-purchase-module"></span><h2>coffee.purchase module<a class="headerlink" href="#module-coffee.purchase" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="coffee.coffee.public_fn_with_googley_docstring">
-<span class="sig-prename descclassname"><span class="pre">coffee.coffee.</span></span><span class="sig-name descname"><span class="pre">public_fn_with_googley_docstring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coffee.coffee.public_fn_with_googley_docstring" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function does something.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) -- The name to use.</p>
-</dd>
-</dl>
-<dl class="simple">
-<dt>Kwargs:</dt><dd><p>state (bool): Current state to be in.</p>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><p>int.  The return code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>0 -- Success!
-1 -- No good.
-2 -- Try again.
-</pre></div>
-</div>
-</p>
-</dd>
-<dt class="field-even">Raises</dt>
-<dd class="field-even"><p><strong>AttributeError</strong><strong>, </strong><strong>KeyError</strong> -- </p>
-</dd>
-</dl>
-<p>A really great idea.  A way you might use me is</p>
-<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">public_fn_with_googley_docstring</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="go">0</span>
-</pre></div>
-</div>
-<p>BTW, this always returns 0.  <strong>NEVER</strong> use with <code class="xref py py-class docutils literal notranslate"><span class="pre">MyPublicClass</span></code>.</p>
+<dt class="sig sig-object py" id="coffee.purchase.purchase_bean">
+<span class="sig-prename descclassname"><span class="pre">coffee.purchase.</span></span><span class="sig-name descname"><span class="pre">purchase_bean</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coffee.purchase.purchase_bean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Only 1 function</p>
+<p>Glad to see you here , unfortunately bean still delivering.</p>
 </dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="coffee.coffee.public_fn_with_sphinxy_docstring">
-<span class="sig-prename descclassname"><span class="pre">coffee.coffee.</span></span><span class="sig-name descname"><span class="pre">public_fn_with_sphinxy_docstring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#coffee.coffee.public_fn_with_sphinxy_docstring" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function does something.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<em>str.</em>) -- The name to use.</p></li>
-<li><p><strong>state</strong> (<em>bool.</em>) -- Current state to be in.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>int -- the return code.</p>
-</dd>
-<dt class="field-odd">Raises</dt>
-<dd class="field-odd"><p>AttributeError, KeyError</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="coffee.coffee.public_fn_without_docstring">
-<span class="sig-prename descclassname"><span class="pre">coffee.coffee.</span></span><span class="sig-name descname"><span class="pre">public_fn_without_docstring</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#coffee.coffee.public_fn_without_docstring" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </section>
-<section id="module-coffee">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-coffee" title="Permalink to this headline">¶</a></h2>
+<section id="module-0">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-0" title="Permalink to this headline">¶</a></h2>
 </section>
 </section>
 
@@ -160,9 +111,11 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">coffee package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-coffee.coffee">coffee.coffee module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-coffee">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-coffee.purchase">coffee.purchase module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-0">Module contents</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="shipment.html">shipment package</a></li>
 </ul>
 
 <div class="relations">
@@ -170,6 +123,7 @@
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="index.html" title="previous chapter">Welcome to py-sphinx-walkthrough's documentation!</a></li>
+      <li>Next: <a href="shipment.html" title="next chapter">shipment package</a></li>
   </ul></li>
 </ul>
 </div>
